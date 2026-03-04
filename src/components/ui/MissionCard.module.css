@@ -1,0 +1,160 @@
+.missionCard {
+  background: linear-gradient(
+    135deg,
+    var(--ifm-background-surface-color) 0%,
+    var(--ifm-color-emphasis-100) 100%
+  );
+  border: 2px solid var(--ifm-color-primary);
+  border-radius: var(--ifm-card-border-radius);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.title {
+  font-family: var(--ifm-font-family-heading);
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 0;
+  color: var(--ifm-heading-color);
+  flex: 1;
+}
+
+.xpBadge {
+  background: var(--progress-fill-gradient);
+  color: white;
+  padding: 0.375rem 0.875rem;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px var(--xp-color-glow);
+}
+
+.timeEstimate {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-500);
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.timeIcon {
+  font-size: 1.1rem;
+}
+
+.criteria {
+  background: var(--ifm-background-surface-color);
+  padding: 1.25rem;
+  border-radius: 6px;
+  margin-bottom: 1.25rem;
+}
+
+.criteriaTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--ifm-heading-color);
+  font-size: 0.95rem;
+}
+
+.criteriaIcon {
+  color: var(--ifm-color-success);
+  font-size: 1.1rem;
+}
+
+.criteriaList {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.criteriaList li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.reflection {
+  margin-top: 1.25rem;
+}
+
+.reflectionTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--ifm-heading-color);
+  font-size: 0.95rem;
+}
+
+.reflectionIcon {
+  font-size: 1.1rem;
+}
+
+.reflectionList {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.reflectionList li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.bonus {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  padding: 1rem;
+  background: rgba(243, 156, 18, 0.1);
+  border: 1px dashed var(--ifm-color-warning);
+  border-radius: 6px;
+}
+
+.bonusIcon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.bonusText {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.bonusText strong {
+  color: var(--ifm-color-primary);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .missionCard {
+    padding: 1.25rem;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 1.15rem;
+  }
+
+  .xpBadge {
+    align-self: flex-start;
+  }
+}
