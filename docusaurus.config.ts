@@ -78,10 +78,6 @@ const config: Config = {
     },
     navbar: {
       title: 'Mastering People & Influence',
-      logo: {
-        alt: 'Mastering the Art of People and Influence',
-        src: 'img/logo.svg',
-      },
       items: [
         {
           type: 'docSidebar',
@@ -94,18 +90,13 @@ const config: Config = {
           label: 'Start Reading',
           position: 'left',
         },
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
       ],
     },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Parts',
+          title: 'Books',
           items: [
             {
               label: 'Part 1: The Foundation',
@@ -137,30 +128,34 @@ const config: Config = {
               to: '/docs/intro',
             },
             {
-              label: 'Badge Collection',
-              to: '/docs/intro',
-            },
-            {
               label: 'Progress Tracker',
               to: '/docs/intro',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Connect',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'GitHub',
+              href: 'https://github.com',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Twitter',
+              href: 'https://twitter.com',
+            },
+            {
+              label: 'LinkedIn',
+              href: 'https://linkedin.com',
+            },
+            {
+              label: 'Contact',
+              href: 'mailto:info@example.com',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Mastering the Art of People and Influence. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Mastering the Art of People and Influence.`,
     },
     prism: {
       theme: prismThemes.github,
