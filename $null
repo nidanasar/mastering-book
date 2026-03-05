@@ -1,4 +1,3 @@
-A subdirectory or file echo already exists.
-Error occurred while processing: echo.
-A subdirectory or file Directory created or exists already exists.
-Error occurred while processing: Directory created or exists.
+fatal: ambiguous argument ';': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
