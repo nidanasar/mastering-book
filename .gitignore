@@ -1,17 +1,21 @@
 # Root .gitignore for monorepo structure
 
-# Ignore everything except frontend and backend folders
+# Ignore everything at root
 *
 
-# Keep frontend
+# Keep frontend and all its contents
 !frontend/
+!frontend/**/*
 
-# Keep backend (will be created)
+# Keep backend and all its contents
 !backend/
+!backend/**/*
 
 # Keep root-level configs
 !.gitignore
 !README.md
+!PROJECT_STATUS.md
+!QUICKSTART.md
 
 # Ignore IDE and tool configs at root
 .vscode/

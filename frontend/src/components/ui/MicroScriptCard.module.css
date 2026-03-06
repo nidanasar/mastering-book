@@ -1,0 +1,129 @@
+.microScriptCard {
+  background: var(--ifm-background-surface-color);
+  border: 2px solid var(--ifm-color-secondary);
+  border-radius: var(--ifm-global-radius);
+  padding: 1.25rem;
+  margin: 1rem 0;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.microScriptCard:hover {
+  box-shadow: var(--ifm-global-shadow-lw);
+}
+
+.category {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--ifm-color-secondary);
+  background: var(--ifm-color-secondary-lightest);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.situation {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--ifm-heading-color);
+  font-size: 0.95rem;
+  padding-right: 5rem;
+}
+
+.scriptContainer {
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+
+.script {
+  font-family: 'JetBrains Mono', monospace;
+  background: var(--ifm-color-emphasis-100);
+  padding: 1rem 1rem 1rem 1.25rem;
+  border-radius: 6px;
+  border-left: 3px solid var(--ifm-color-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  color: var(--ifm-font-color-base);
+  quotes: none;
+}
+
+.script::before,
+.script::after {
+  content: none;
+}
+
+.copyButton {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  padding: 0.375rem 0.625rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-700);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.copyButton:hover {
+  background: var(--ifm-color-emphasis-100);
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.copyButton.copied {
+  background: var(--ifm-color-secondary);
+  border-color: var(--ifm-color-secondary);
+  color: white;
+}
+
+.copyIcon {
+  font-size: 0.9rem;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 768px) {
+  .microScriptCard {
+    padding: 1rem;
+  }
+
+  .category {
+    position: static;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+
+  .situation {
+    padding-right: 0;
+  }
+
+  .copyButton {
+    position: static;
+    margin-top: 0.5rem;
+    width: 100%;
+    justify-content: center;
+  }
+}
