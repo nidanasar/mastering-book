@@ -4,13 +4,6 @@
   "outputDirectory": "build",
   "devCommand": "npm run start",
   "installCommand": "npm install",
-  "rootDirectory": ".",
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    }
-  ],
   "env": {
     "NODE_VERSION": "20"
   },
